@@ -9,6 +9,7 @@ public class Ticket {
     private Long id;
     private String nomclient;
     private double prix;
+    @Column(unique = true)
     private int codePayement;
     private boolean reserve;
     @ManyToOne
