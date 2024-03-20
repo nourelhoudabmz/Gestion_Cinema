@@ -17,7 +17,7 @@ public class Cinema {
         @OneToMany(mappedBy = "cinema")
     private Collection<Salle> salles;
         @ManyToOne
-    private ville ville;
+    private Ville ville;
 
 }
 

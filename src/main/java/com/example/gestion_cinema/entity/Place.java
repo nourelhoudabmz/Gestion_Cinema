@@ -1,10 +1,12 @@
 package com.example.gestion_cinema.entity;
 
 import jakarta.persistence.*;
+import lombok.Data;
 
 import java.util.Collection;
 
 @Entity
+@Data
 public class Place {
 @Id
 @GeneratedValue(strategy= GenerationType.IDENTITY)

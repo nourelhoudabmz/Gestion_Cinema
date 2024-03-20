@@ -17,6 +17,7 @@ public class Film {
     private String realisateur;
     private Date dateSortie;
     private double durees;
+    private String photo;
     @OneToMany(mappedBy = "film")
     private Collection<Projection> projections;
 

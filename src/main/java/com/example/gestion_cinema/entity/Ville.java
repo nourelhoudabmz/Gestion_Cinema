@@ -1,10 +1,12 @@
 package com.example.gestion_cinema.entity;
 
 import jakarta.persistence.*;
+import lombok.Data;
 
 import java.util.Collection;
 @Entity
-public class ville {
+@Data
+public class Ville {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private Long id;
