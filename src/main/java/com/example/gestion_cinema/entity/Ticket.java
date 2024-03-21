@@ -1,5 +1,6 @@
 package com.example.gestion_cinema.entity;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -11,7 +12,7 @@ public class Ticket {
     private Long id;
     private String nomclient;
     private double prix;
-    @Column(unique = true, nullable = true)
+    @Column(unique = false, nullable = true)
     private Integer codePayement;
     private boolean reserve;
     @ManyToOne

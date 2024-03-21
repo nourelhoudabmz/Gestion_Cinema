@@ -1,5 +1,6 @@
 package com.example.gestion_cinema.entity;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -17,5 +18,6 @@ public class Place {
     private Salle salle;
 
     @OneToMany(mappedBy = "place")
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private Collection<Ticket> tickets;
 }
