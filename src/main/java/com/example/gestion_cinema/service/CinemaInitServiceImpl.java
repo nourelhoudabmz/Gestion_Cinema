@@ -113,7 +113,7 @@ public class CinemaInitServiceImpl implements ICinemaInitService {
     public void initFilms() {
         double[] durees=new double[] {1,1.5,2,2.5,3,3.5};
         List<Categorie> categories=categoryRepository.findAll();
-        Stream.of("Game of thrones","Seigneur des anneaux","Spider man","Iron man","Cat woman","titanic","harrypotter","greenbook")
+        Stream.of("Game of thrones","titanic","harrypotter","greenbook","Seigneur des anneaux","Spider man","Iron man","Cat woman")
                 .forEach(titreFilm->{
                     Film film=new Film();
                     film.setTitre(titreFilm);
